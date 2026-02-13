@@ -5,7 +5,7 @@ const questions = [
   "Would you like me to surprise you with sunflowers, even when there’s no special reason?",
   "Would you enjoy sitting by the seashore with me, watching the sunset in silence?",
   "If one day could repeat, could I have more days like January 17, 2026 with you?",
-  "Would you like to go on a movie date with me sometime?"
+  "Would you like to watch a movie with me in a theatre sometime?"
 ];
 
 let index = 0;
