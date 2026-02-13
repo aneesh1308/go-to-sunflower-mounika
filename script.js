@@ -415,7 +415,13 @@ function showEnd() {
 
   introCard.innerHTML = `
     <div class="end-message">
-      <h2>🌻</h2>
+
+      <!-- Sunflowers at the top -->
+      <div style="text-align:center; margin-bottom: 15px;">
+        <span style="display:inline-block; transform: rotate(45deg); font-size:40px;">🌻</span>
+        <span style="display:inline-block; transform: rotate(0deg); font-size:40px; margin-left:-25px;">🌻</span>
+      </div>
+
 
       <p>
         I can see you like the fish below, watching the starfish from far away.
@@ -457,4 +463,5 @@ function showEnd() {
       </p>
     </div>
   `;
+
 }
