@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Just One Question 🌻</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div id="biryaniPopup" class="popup hidden">
+      <div class="popup-card">
+        <p id="biryaniText">Are you sure it’s biryani?</p>
+        <div class="popupBtns">
+          <button id="biryaniYes">Yes</button>
+          <button id="biryaniNo">Think Again</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- INTRO CARD -->
+    <div class="card" id="introCard">
+      <h2>Hey MJ (Mounika) 🌻</h2>
+      <p>
+        Before today ends,
+        I want to ask you a few questions.
+        <br>
+        One small request 
+        try to answer “No” most of the time.
+        <br>    
+        Trust me, you’ll enjoy it more 😉
+      </p>
+      <button id="startBtn">Start</button>
+    </div>
+
+    <!-- QUESTION CARD -->
+    <div class="card hidden" id="questionCard">
+
+      <!-- Question Image -->
+      <img id="questionImage" class="q-img hidden" src="question-image.jpeg" />
+
+      <h2 id="question"></h2>
+
+      <div class="buttons">
+        <button id="yes">Yes</button>
+        <button id="no">
+          <span class="no-text">No</span>
+          <span class="no-replace">More like 17th’s</span>
+        </button>
+      </div>
+
+      <!-- Image Options -->
+      <div id="imageOptions" class="img-options hidden">
+        <img id="imgYes" src="yes-image.jpeg" class="option-img" />
+        <div class="flip-card" id="imgNoCard">
+          <div class="flip-inner">
+            <img src="no-image.jpeg" class="option-img front">
+            <img src="yes-sunflowers-image.jpeg" class="option-img back">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Sea Life -->
+    <div class="sea-life">
+      <!-- Fishes -->
+      <div class="fish f1"><span>🐠</span></div>
+      <div class="fish f2"><span>🐟</span></div>
+      <div class="fish f3"><span>🐡</span></div>
+      <div class="fish f4"><span>🐠</span></div>
+      <div class="fish f5"><span>🐟</span></div>
+      <div class="fish f6"><span>🐡</span></div>
+
+      <!-- Other sea elements -->
+      <div class="starfish">⭐</div>
+      <div class="seahorse">🐠</div>
+    </div>
+
+    <!-- Sea Waves -->
+    <footer>
+      <svg viewBox="0 0 120 28" preserveAspectRatio="none">
+        <defs>
+          <path
+            id="wave"
+            d="
+            M 0,10
+            C 10,9 20,11 30,10
+            C 40,9 50,11 60,10
+            C 70,9 80,11 90,10
+            C 100,9 110,11 120,10
+            C 130,9 140,11 150,10
+            C 160,9 170,11 180,10
+            C 190,9 200,11 210,10
+            C 220,9 230,11 240,10
+            C 250,9 260,11 270,10
+            C 280,9 290,11 300,10
+            C 310,9 320,11 330,10
+            C 340,9 350,11 360,10
+            C 370,9 380,11 390,10
+            C 400,9 410,11 420,10
+            C 430,9 440,11 450,10
+            C 460,9 470,11 480,10
+            C 490,9 500,11 510,10
+            C 520,9 530,11 540,10
+            C 550,9 560,11 570,10
+            C 580,9 590,11 600,10
+            v 28 h -600 z
+            "
+          />
+        </defs>
+        <use class="wave w1" href="#wave"></use>
+        <use class="wave w2" href="#wave"></use>
+        <use class="wave w3" href="#wave"></use>
+      </svg>
+    </footer>
+    <audio id="bgMusic" loop>
+      <source src="song.mp3" type="audio/mpeg">
+    </audio>
+    <!-- Sunflowers + Bees -->
+    <script src="fallingSunflowersBees.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
